@@ -1,0 +1,20 @@
+Smart Parking Application
+* Monitoring
+	* Display occupancy information for each lot
+		* tiled window displays for cameras at each lot
+		* video feed, detected vehicles, car counts
+* Administration
+	* Ability to manually set/reset count at a lot
+	* Access to log data and other relevant databases for parking information
+* Logs
+	* Collected at fixed intervals or whenever the count changes
+	* Contains time tamps, occupancy count, license plates, parking pass ID’s
+	* Output an additional end-of-day summary log
+* Parking Database
+	* Need access to information to link license plates to parking pass types
+	* Provided by university
+* Object detection/tracking
+	* Analyze video feed to detect and track cars and identify them within parking spaces
+	* Cross-check license plates (or sticker passes) and parking spots
+* Regulating Entry (if lot has a bar that opens/closes)
+	* Only allow entry to lot/structure if the license plate is associated with the correct parking pass type for the lot/structure
